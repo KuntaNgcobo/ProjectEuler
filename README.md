@@ -11,3 +11,6 @@ https://projecteuler.net/about
 https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/
 or
 https://projecteuler.net/archives
+
+## The Pledge
+https://twitter.com/KuntaKinte_N/status/1216480661017694209
