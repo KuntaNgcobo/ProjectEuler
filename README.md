@@ -1,6 +1,6 @@
 # ProjectEuler
 
-A repository to save the ProjectEuler challenges.
+A repository to save the ProjectEuler challenges. Challenges shall be done in Python3 and Javascript ES6
 
 ## Introduction
 https://www.freecodecamp.org/news/projecteuler100-coding-challenge-competitive-programming/
