@@ -27,9 +27,11 @@ const largestPrimeFactor = number => {
   while(factorCap >= i){
     if(number % i===0){
       number = number / i;
+
       if(prime(number)){
         return number;
       }
+      
     }else{
       i++;
     }
