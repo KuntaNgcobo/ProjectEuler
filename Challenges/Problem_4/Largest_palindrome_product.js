@@ -9,6 +9,7 @@ const isPalindrome = n => {
   while(stringN.length > minLength){
     let start = stringN.slice(0,1);
     let end = stringN.slice(-1);
+
     if(start !== end){
       return false;
     }
@@ -23,22 +24,19 @@ const largestPalindromeProduct = (n) => {
   let largest = [0, 0, 0];
   let i = end;
   let j = end;
+
   while(i > start){
     while (j > start){
       let number = i*j;
       if(largest[2] + largest[1] < i+j && isPalindrome(number)){
               largest = [number, i, j];
-              //break loopj;
               j=start;
-      }else{
-        j--;
-      }
+      }else{ j--; }
     }
     j=end;
     i--;
-    if(i <= largest[2]){
-      break;
-    }
+
+    if(i <= largest[2]){ break; }
   }
   return largest[0];
 }
