@@ -8,7 +8,7 @@ def prime(n):
   if (n % 2 == 0 and n != 2):
     return False
   
-  factorCap = math.ceil(math.sqrt(n))
+  factorCap = math.ceil(math.sqrt(n))+1
   for i in range(3, factorCap, 2): 
     if (n % i == 0):
       return False
