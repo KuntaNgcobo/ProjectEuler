@@ -5,18 +5,7 @@ import math
 
 def isPalindrome(n):
   stringN = str(n)
-  length = len(stringN)
-  minLength = length%2
-
-  while(len(stringN) > minLength):
-    start = stringN[0]
-    end = stringN[-1]
-    if(start != end):
-      return False
-    
-    stringN = stringN[1: -1]
-  
-  return True
+  return stringN == stringN[::-1]
 
 
 def largestPalindromeProduct(n):
@@ -40,4 +29,3 @@ def largestPalindromeProduct(n):
       break
   #print(largest)
   return largest[0]
-
