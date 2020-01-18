@@ -1,3 +1,6 @@
+// KuntaNgcobo
+// Smallest Mutliple
+
 const gcd = (n,m) => {
   do{
 
@@ -15,21 +18,24 @@ const gcd = (n,m) => {
 }
 
 const smallestMult = n => {
-  //let evens = n%2===0 ? n : n-1;
-  //n = n%2==0 ? n : n-1;
-  //let odds = n;
   let temp = n;
-  for(var i = n-1; i > 1; i--){
-    //odds=odds*gcd(odds, i);
+  for(var i = n-1; i > n/2; i--){
     let gcdValue = gcd(i, temp);
     if(gcdValue===1){
       temp=temp*i;
-      console.log(temp)
     }else if(gcdValue>1){
       temp=temp*(i/gcdValue)
-      console.log(temp)
+    }
+  }
+
+  for(var i = Math.floor(n/2)-1; i > 2; i = i-2){
+    let gcdValue = gcd(i, temp);
+    if(gcdValue===1){
+      temp=temp*i;
+    }else if(gcdValue>1){
+      temp=temp*(i/gcdValue)
     }
   }
   return temp;
-  //return odds*gcd(odds, evens);
 }
+
