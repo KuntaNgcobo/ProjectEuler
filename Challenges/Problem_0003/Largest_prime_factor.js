@@ -2,7 +2,7 @@
 // Largest_prime_factor
 // comment: Solution Not Liked by I
 
-const prime = n => {
+const isPrime = n => {
   if (n % 2 === 0 && n ==! 2) {
     return false;
   }
@@ -17,7 +17,7 @@ const prime = n => {
 }
 
 const largestPrimeFactor = number => {
-  if (prime(number)) {
+  if (isPrime(number)) {
     return number;
   }
 
@@ -28,7 +28,7 @@ const largestPrimeFactor = number => {
     if(number % i===0){
       number = number / i;
 
-      if(prime(number)){
+      if(isPrime(number)){
         return number;
       }
       

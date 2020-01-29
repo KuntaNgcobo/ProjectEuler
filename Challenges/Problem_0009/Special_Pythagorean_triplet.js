@@ -16,7 +16,3 @@ const specialPythagoreanTriplet = n => {
  }
  return -1;
 }
-
-​
-
-

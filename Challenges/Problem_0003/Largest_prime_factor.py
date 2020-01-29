@@ -4,7 +4,7 @@
 
 import math
 
-def prime(n):
+def isPrime(n):
   if (n % 2 == 0 and n != 2):
     return False
   
@@ -15,9 +15,8 @@ def prime(n):
   
   return True
 
-
 def largestPrimeFactor(number):
-  if (prime(number)):
+  if (isPrime(number)):
     return number
 
   factorCap = number / 2 if(number % 2 == 0) else math.ceil(number / 3)
@@ -27,7 +26,7 @@ def largestPrimeFactor(number):
     if(number % i==0):
       number = number / i
 
-      if(prime(number)):
+      if(isPrime(number)):
         return number
       
     else:
