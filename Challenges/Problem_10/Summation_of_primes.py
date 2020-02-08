@@ -24,8 +24,3 @@ def primeSummation(n):
       total += i 
  
   return total
-
-print(primeSummation(12))
-print(primeSummation(3))
-print(primeSummation(2))
-print(primeSummation(1))

@@ -26,4 +26,3 @@ const primeSummation = n => {
   }
   return total;
 }
-primeSummation(2000000);
